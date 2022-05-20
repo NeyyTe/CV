@@ -1,4 +1,89 @@
-body{
-    background-color: rgb(23, 184, 130);
-    text-align: center;
-}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #blocPrincipal {
+    width: 100%;
+    max-width: 2000px;
+  }
+  
+  .ecran {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+  }
+  
+  section {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  /* ecran 1 */
+  .ecran1 {
+    width: 17%;
+    background-color: rgba(138, 165, 206, 0.41);
+  }
+  .ecran1 .portrait{
+      padding: 10px;
+      width: 300px;
+  }
+  .ecran .portrait img{
+      width:100%;
+      height: auto;   
+  }
+  
+  /* ecran 2 */
+  .ecran2 {
+      background-color: rgba(138, 165, 206, 0.41);;
+    width: 100%;
+  }
+  
+  /* ecran 3*/
+  .ecran3 {
+      background-color: rgba(138, 165, 206, 0.41);;
+    width: 100%;
+  }
+  
+  /* ecran 4*/
+  .ecran4 {
+    width: 100%;
+  }
+  
+  /* ecran 5*/
+  .ecran5 {
+    width: 100%;
+  }
+  
+  /* ecran 6*/
+  .ecran6 {
+    width: 100%;}
+
+    .blocnomprenom{
+       
+        /* Rectangle 2 */
+position: absolute;
+width: 1053px;
+height: 272px;
+left: 323px;
+top: 108px;
+
+background: #383838;
+  }
+  
+
+
+
