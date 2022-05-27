@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {}
+
+#blocPrincipal {
+  width: 100%;
+  max-width: 2000px;
+}
+
+.ecran {
+  height: 92vh;
+  width: 100%;
+  display: flex;
+}
+
+section {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+/* ecran 1 */
+.ecran1 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px 180px;
+
+}
+
+header img {
+  position: absolute;
+  width: 275px;
+  top: 70px;
+  left: 40px;
+
+}
+
+header {
+  background: rgb(179, 179, 179);
+  background: linear-gradient(0deg, rgba(179, 179, 179, 1) 0%, rgba(138, 165, 206, 1) 0%, rgba(255, 255, 255, 1) 78%);
+  text-align: center;
+  padding: 5% 0;
+
+}
+
+div.titledev {
+  margin: 4% 0;
+}
+
+header h1 {
+  font-size: 48px;
+  text-align: center;
+  color: rgba(138, 165, 206, 1);
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 70px;
+  margin-top: 70px;
+
+}
+
+header nav ul li {
+  list-style-type: none;
+  position: relative;
+
+}
+
+header nav ul li a {
+  text-decoration: none;
+
+  font-size: 25px;
+  margin: 0 15px;
+  padding: 0 45px;
+
+  color: rgba(138, 165, 206, 1);
+}
+
+header nav {
+  width: 100%;
+  height: 25px;
+}
+
+.ecran {
+  background-color: rgb(255, 255, 255);
+  border: 4px solid;
+}
+
+
+/** hover 1 */
+a:nth-child(1) {
+  color: #fff;
+  transition: .3s all;
+}
+
+a:nth-child(1):before,
+a:nth-child(1):after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  transition: .3s all;
+}
+
+a:nth-child(1):before {
+  left: 0;
+  top: -6px;
+  border-top: 2px solid #fff;
+}
+
+a:nth-child(1):after {
+  top: 6px;
+  right: 0;
+  border-bottom: 2px solid #fff;
+}
+
+a:nth-child(1):hover {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+a:nth-child(1):hover:after,
+a:nth-child(1):hover:before {
+  width: 80%;
+}
+
+/** end hover 1*/
+
+.couleurh2devfront {
+  margin: 0;
+  font-size: 70px;
+  color: #8AA5CE;
+  text-shadow: 0 1px 0 #32312b, 0 2px 0 #32312b, 0 3px 0 #32312b,
+    0 4px 0 #32312b, 0 5px 0 #32312b, 0 6px 0 #32312b, 0 7px 0 #32312b,
+    0 8px 0 #32312b, 0 9px 0 #32312b, 0 30px 20px rgba(0, 0, 0, 0.8);
+}
+
+.titreNomPrenom {
+  margin: 0;
+  font-size: 50px;
+  color: #8AA5CE;
+  text-shadow: 0 1px 0 #32312b, 0 2px 0 #32312b, 0 3px 0 #32312b,
+    0 4px 0 #32312b, 0 5px 0 #32312b, 0 6px 0 #32312b, 0 7px 0 #32312b,
+    0 8px 0 #32312b, 0 9px 0 #32312b, 0 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+/*Cadre Formations et Expériences*/
+.cadresEcran1 {
+  background: rgb(179, 179, 179);
+  background: linear-gradient(0deg, rgba(179, 179, 179, 1) 0%, rgba(138, 165, 206, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  height: 10%;
+  width: 100%;
+  color: #000000;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 40px 0;
+
+}
+
+/* Contenu Formations*/
+.containEcran1 {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+}
+
+*/ .tableau {
+  width: 100%;
+  background-color: brown;
+}
+
+table {
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+}
+
+table tbody tr .top {
+  font-size: 22px;
+  padding: 25px;
+
+}
+
+table tbody tr .space {
+  width: 15%;
+}
+
+table tbody tr .after {
+  width: 5%;
+}
+
+/* Début responsive Menu*/
+.checkbtn {
+  font-size: 2rem;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width:952px) {
+  label.logo {
+    font-size: 2rem;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+/* Début responsive Menu*/
+
+.checkbtn {
+  font-size: 2rem;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width:952px) {
+  label.logo {
+    font-size: 2rem;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width:858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  nav {
+    padding: 0 20px;
+  }
+
+  label.logo {
+    width: 90%;
+    text-align: center;
+  }
+
+  nav ul {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    /* couleur de fond du menu */
+    top: 80px;
+    /*gérer içi l'emplacement où s'ouvre le menu, augmenter la valeur pour monter */
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 2rem;
+  }
+
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #05be4c;
+    /* couleur des liens du menu */
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+  .checkbtn{
+    font-size: 2rem;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display:none;
+}
+
+@media (max-width:952px){
+    label.logo{
+        font-size: 2rem;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+
+    nav{
+        padding: 0 20px;
+    }
+
+    label.logo{
+        width: 90%;
+        text-align: center;
+    }
+    nav ul{
+        display: inline-block;
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50; /* couleur de fond du menu */
+        top:80px;       /*gérer içi l'emplacement où s'ouvre le menu, augmenter la valeur pour monter */
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 2rem;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #8AA5CE; /* couleur des liens du menu */
+    }
+    #check:checked ~ ul{
+        left:0;
+
+    }
+    header img{
+      display: none;
+    }
+    label.logo{
+      width: 90%;
+      text-align: center;
+      position: static;
+      visibility: visible;
+      display: block;
+    }
+} 
+}
+
+/*Fin reponsive Menu*/
