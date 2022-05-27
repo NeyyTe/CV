@@ -104,8 +104,8 @@ header nav {
 }
 
 
-/** hover 1 */
-a:nth-child(1) {
+
+/* a:nth-child(1) {
   color: #fff;
   transition: .3s all;
 }
@@ -139,9 +139,9 @@ a:nth-child(1):hover {
 a:nth-child(1):hover:after,
 a:nth-child(1):hover:before {
   width: 80%;
-}
+} */
 
-/** end hover 1*/
+
 
 .couleurh2devfront {
   margin: 0;
@@ -320,7 +320,8 @@ table tbody tr .after {
   #check:checked~ul {
     left: 0;
   }
-  .checkbtn{
+
+  .checkbtn {
     font-size: 2rem;
     color: white;
     float: right;
@@ -328,76 +329,131 @@ table tbody tr .after {
     margin-right: 40px;
     cursor: pointer;
     display: none;
-}
+  }
 
-#check{
-    display:none;
-}
+  #check {
+    display: none;
+  }
 
-@media (max-width:952px){
-    label.logo{
-        font-size: 2rem;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 1rem;
-    }
-}
-
-
-@media (max-width:858px){
-    .checkbtn{
-        display: block;
+  @media (max-width:952px) {
+    label.logo {
+      font-size: 2rem;
+      padding-left: 50px;
     }
 
-    nav{
-        padding: 0 20px;
+    nav ul li a {
+      font-size: 1rem;
     }
+  }
 
-    label.logo{
-        width: 90%;
-        text-align: center;
-    }
-    nav ul{
-        display: inline-block;
-        position:fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50; /* couleur de fond du menu */
-        top:80px;       /*gérer içi l'emplacement où s'ouvre le menu, augmenter la valeur pour monter */
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        width: 100%;
-        margin: 0;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 2rem;
-    }
-    nav ul li a{
-        font-size: 1.5rem;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #8AA5CE; /* couleur des liens du menu */
-    }
-    #check:checked ~ ul{
-        left:0;
 
-    }
-    header img{
-      display: none;
-    }
-    label.logo{
-      width: 90%;
-      text-align: center;
-      position: static;
-      visibility: visible;
+  @media (max-width:858px) {
+    .checkbtn {
       display: block;
     }
-} 
+
+    nav {
+      padding: 0 20px;
+    }
+
+    label.logo {
+      width: 90%;
+      text-align: center;
+    }
+
+    nav ul {
+      display: inline-block;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      /* couleur de fond du menu */
+      top: 275px;
+      /*gérer içi l'emplacement où s'ouvre le menu, augmenter la valeur pour monter */
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      width: 100%;
+      margin: 0;
+    }
+
+    nav ul li {
+
+      display: block;
+      margin: 50px 0;
+      line-height: 2rem;
+    }
+
+    nav ul li a {
+      color: #8AA5CE;
+      font-size: 1.5rem;
+    }
+
+    a:hover,
+    a.active {
+      background: none;
+      color: #8AA5CE;
+      /* couleur des liens du menu */
+    }
+
+    #check:checked~ul {
+      left: 0;
+
+    }
+
+    header img {
+      display: none;
+    }
+
+  
+  }
+
 }
 
 /*Fin reponsive Menu*/
+a{
+  width:150px;
+  height:50px;
+  font-size:16px;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  cursor:pointer;
+}
+
+a:hover{   
+  opacity: 0.99; 
+}
+
+/* fin code commun */
+
+/** hover 1 */
+.btn1{
+  color:#8AA5CE;
+  transition:.3s all;
+}
+.btn1:before,.btn1:after{
+  content:'';
+  position:absolute;
+  width:0%;
+  height:100%;
+  transition:.3s all;
+}
+.btn1:before{
+  left:0;
+  border-top:2px solid #8AA5CE;
+}
+.btn1:after{
+  right:0;
+  border-bottom:2px solid #8AA5CE;
+}
+.btn1:hover{
+  font-weight:bold;
+  letter-spacing:2px;
+}
+.btn1:hover:after, .btn1:hover:before{
+  width:100%;
+}
+/** end hover 1*/
