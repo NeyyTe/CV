@@ -9,7 +9,13 @@
     <title>Mon cv en ligne</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/097058085d.js" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('ZY2uHVg-DT9w-gRjR');
+        })();
+    </script>
 
 </head>
 
@@ -47,6 +53,7 @@
         <div class="ecran ecran1">
 
             <div class="cadresEcran1">FORMATIONS</div>
+
             <div class="containEcran1">
 
                 <table border="0px">
@@ -105,8 +112,31 @@
 
         <!--ecran 2-->
         <div class="ecran ecran2">
-          
-            <h2>ecran 2</h2>
+            <div class="containEcran2">
+                <div class="txt_exp">
+                    <p class="text_experiences">2020
+                    <p><strong>Picardie</strong></p>
+                    <br>
+                    <br>
+
+                    <p>2019</p>
+                    <p><strong>Dorignies</strong></p>
+                    <br>
+                    <br>
+                    <p>2017</p>
+                    <p><strong>Douai</strong></p>
+
+
+                    </p>
+                </div>
+
+
+
+
+
+            </div>
+
+
         </div>
 
         <!--ecran 3-->
@@ -124,9 +154,44 @@
         <!--ecran 6-->
         <div class="ecran ecran6">
             <h2>Ecran 6</h2>
+            <div id="result-form">
+            </div>
+            <div class="contain-tout">
+                <div class="form-container">
+                    <form method="post" id="contact-form">
+                        <div>
+                            <label for="nom">Nom : *</label>
+                            <input type="text" name="nom" id="nom" required minlength="3" maxlength="20">
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <label for="email">Adresse email : *</label>
+                            <input type="email" name="email" id="email" minlength="6" maxlength="50">
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <label for="telephone">Téléphone :</label>
+                            <input type="text" name="telephone" id="telephone">
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <label for="message">Message : *</label>
+                            <textarea name="message" id="message" name="message" required minlength="10"
+                                maxlength="250"></textarea>
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <input class="btn" id="submit" type="submit" value="Envoyer">
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
         </div>
     </div>
     <script src="style.css"></script>
+    <script src="email.js"></script>
 </body>
 <footer>
     <script src="mobile.js"></script>
