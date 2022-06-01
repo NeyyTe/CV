@@ -7,7 +7,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {}
+body {
+  width: 100%;
+}
 
 #blocPrincipal {
   width: 100%;
@@ -51,7 +53,7 @@ header {
   background: rgb(179, 179, 179);
   background: linear-gradient(0deg, rgba(179, 179, 179, 1) 0%, rgba(138, 165, 206, 1) 0%, rgba(255, 255, 255, 1) 78%);
   text-align: center;
-  padding: 5% 0;
+  padding: 7% 0;
 
 }
 
@@ -85,12 +87,9 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-
-  font-size: 25px;
+  font-size: 21px;
   margin: 0 15px;
-  padding: 0 45px;
-
-  color: rgba(138, 165, 206, 1);
+  color: rgb(255, 255, 255);
 }
 
 header nav {
@@ -103,43 +102,6 @@ header nav {
   border: 4px solid;
 }
 
-
-
-/* a:nth-child(1) {
-  color: #fff;
-  transition: .3s all;
-}
-
-a:nth-child(1):before,
-a:nth-child(1):after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  transition: .3s all;
-}
-
-a:nth-child(1):before {
-  left: 0;
-  top: -6px;
-  border-top: 2px solid #fff;
-}
-
-a:nth-child(1):after {
-  top: 6px;
-  right: 0;
-  border-bottom: 2px solid #fff;
-}
-
-a:nth-child(1):hover {
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-a:nth-child(1):hover:after,
-a:nth-child(1):hover:before {
-  width: 80%;
-} */
 
 
 
@@ -234,12 +196,12 @@ table tbody tr .after {
 label.logo {
   display: none;
 }
+
 @media (max-width:952px) {
   label.logo {
     font-size: 2rem;
     padding-left: 50px;
   }
-
 
   nav ul li a {
     font-size: 1rem;
@@ -250,6 +212,20 @@ label.logo {
 @media (max-width:858px) {
   .checkbtn {
     display: block;
+  }
+
+  .btn1 {
+    text-decoration: none;
+
+    font-size: 21px;
+    margin: 0 15px;
+
+
+    color: rgb(207, 3, 3);
+  }
+
+  header nav ul {
+    flex-direction: column;
   }
 
   nav {
@@ -265,10 +241,10 @@ label.logo {
     display: inline-block;
     position: fixed;
     width: 100%;
-    height: 100vh;
-    background: #265485;
+    height: 60vh;
+    background: #ffffff;
     /* couleur de fond du menu */
-    top: 80px;
+    top: 310px;
     /*gérer içi l'emplacement où s'ouvre le menu, augmenter la valeur pour monter */
     left: -100%;
     text-align: center;
@@ -283,14 +259,15 @@ label.logo {
     line-height: 2rem;
   }
 
-  nav ul li a {
-    font-size: 1.5rem;
+
+  header nav ul li a {
+    color: #4376c4;
   }
 
   a:hover,
   a.active {
     background: none;
-    color: #05be4c;
+    color: #0004ff;
     /* couleur des liens du menu */
   }
 
@@ -298,142 +275,71 @@ label.logo {
     left: 0;
   }
 
-  .checkbtn {
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-
   #check {
     display: none;
   }
 
-  @media (max-width:952px) {
-    label.logo {
-      font-size: 2rem;
-      padding-left: 50px;
-    }
-
-    nav ul li a {
-      font-size: 1rem;
-    }
-  }
-
-
-  @media (max-width:858px) {
-    .checkbtn {
-      display: block;
-    }
-    header nav ul {
-      flex-direction: column;
-      }
-
-    nav {
-      padding: 0 20px;
-    }
-
-    label.logo {
-      width: 90%;
-      text-align: center;
-    }
-
-    nav ul {
-      display: inline-block;
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #ffffff;
-      /* couleur de fond du menu */
-      top: 275px;
-      /*gérer içi l'emplacement où s'ouvre le menu, augmenter la valeur pour monter */
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-      width: 100%;
-      margin: 0;
-    }
-
-    nav ul li {
-
-      display: block;
-      margin: 50px 0;
-      line-height: 2rem;
-    }
-
-    nav ul li a {
-      color: #8AA5CE;
-      font-size: 1.5rem;
-    }
-
-    a:hover,
-    a.active {
-      background: none;
-      color: #8AA5CE;
-      /* couleur des liens du menu */
-    }
-
-    #check:checked~ul {
-      left: 0;
-
-    }
-
-    header img {
-      display: none;
-    }
-
-  
+  header img {
+    display: none;
   }
 
 }
 
 /*Fin reponsive Menu*/
-a{
-  width:150px;
-  height:50px;
-  font-size:16px;
-  margin:auto;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:relative;
-  cursor:pointer;
+
+a {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
 }
 
-a:hover{   
-  opacity: 0.99; 
+a:hover {
+  opacity: 0.99;
 }
 
 /* fin code commun */
 
 /** hover 1 */
-.btn1{
-  color:#ffffff;
-  transition:.3s all;
+.btn1 {
+  color: #ffffff;
+  transition: .3s all;
 }
-.btn1:before,.btn1:after{
-  content:'';
-  position:absolute;
-  width:0%;
-  height:100%;
-  transition:.3s all;
+
+.btn1:before,
+.btn1:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  transition: .3s all;
 }
-.btn1:before{
-  left:0;
-  border-top:2px solid #ffffff;
+
+.btn1:before {
+  left: -17px;
+  ;
+  border-top: 2px solid #ffffff;
 }
-.btn1:after{
-  right:0;
-  border-bottom:2px solid #ffffff;
+
+.btn1:after {
+  right: -17px;
+  ;
+  border-bottom: 2px solid #ffffff;
 }
-.btn1:hover{
-  font-weight:bold;
-  letter-spacing:2px;
+
+.btn1:hover {
+  font-weight: bold;
+  letter-spacing: 2px;
 }
-.btn1:hover:after, .btn1:hover:before{
-  width:100%;
+
+.btn1:hover:after,
+.btn1:hover:before {
+  width: 100%;
 }
+
 /** end hover 1*/
