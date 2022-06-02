@@ -30,3 +30,4 @@ function failed() {
     lemessage.style.color = 'red';
     lemessage.innerHTML = "Une erreur s'est produite,<br>veuillez réessayer.";
 }
+

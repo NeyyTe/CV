@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
 body {
   width: 100%;
 }
@@ -20,6 +11,8 @@ body {
   height: 92vh;
   width: 100%;
   display: flex;
+  border: 1px solid;
+  
 }
 
 section {
@@ -40,99 +33,136 @@ section {
 
 /* Tout les écrans*/
 
-/* ecran 1 */
-.ecran1 {
+.ecran {
   display: flex;
   text-align: center;
   flex-direction: column;
   padding: 30px 180px;
+}
+
+/* ---------------------------------- ecran 1 ---------------------------------- */
+.ecran1 {
+  
 
 }
 
-/* ecran 1 */
-
-/* ecran 2*/
+/* ---------------------------------- ecran 2 ---------------------------------- */
 
 .ecran2 {
-  background-color: #ffffff;
-}
-
-/* ecran 2*/
-
-
-header img {
-  position: absolute;
-  width: 275px;
-  top: 70px;
-  left: 40px;
 
 }
 
-header {
-  background: rgb(179, 179, 179);
-  background: linear-gradient(0deg, rgba(179, 179, 179, 1) 0%, rgba(138, 165, 206, 1) 0%, rgba(255, 255, 255, 1) 78%);
-  text-align: center;
-  padding: 7% 0;
+/* ecran 3 */
+
+.ecran3 {
 
 }
 
-div.titledev {
-  margin: 4% 0;
+/* ---------------------------------- ecran 4 */
+
+.ecran4 {
+  width: 100%;
 }
 
-header h1 {
-  font-size: 48px;
-  text-align: center;
-  color: rgba(138, 165, 206, 1);
-}
 
-header nav ul {
+.contain-portofolio{
+  width: 90%;
+  height: 90%;
+  margin: 0px auto;
+  background: lightgrey;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 70px;
-  margin-top: 70px;
+}
+
+.contain-portofolio div{
+  width: 30%;
+  height: 40%;
+  margin: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 8px 2px #141414;
+  border-radius: 10px;
+}
+
+.portofolio .photo{
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto 20px auto;
+
+}
+.portofolio:nth-child(1) .photo{
+  background: lightcoral;
+  background-image: url('img1.jpg');
+  background-size: cover;
+  width: 260px;
+  height: 170px;
+}
+
+.portofolio:nth-child(2) .photo{
+  background: lightblue;
+  background-image: url('img2.jpg');
+  background-size: cover;
+  width: 260px;
+  height: 170px;
+}
+
+.portofolio:nth-child(3) .photo{
+  background: lawngreen;
+  background-image: url('img3.jpg');
+  background-size: cover;
+  width: 260px;
+  height: 170px;
+}
+
+.portofolio:nth-child(4) .photo{
+  background: lightcoral;
+  background-image: url('img1.jpg');
+  background-size: cover;
+  width: 260px;
+  height: 170px;
+}
+
+.portofolio:nth-child(5) .photo{
+  background: lightblue;
+  background-image: url('img2.jpg');
+  background-size: cover;
+  width: 260px;
+  height: 170px;
+}
+
+.portofolio:nth-child(6) .photo{
+  background: lawngreen;
+  background-image: url('img3.jpg');
+  background-size: cover;
+  width: 260px;
+  height: 170px;
+}
+
+.portofolio h2{
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+}
+.portofolio p{
+  text-align: justify;
+  color: rgb(54, 54, 53);
+}
+
+
+
+
+/* ecran 5 */
+
+.ecran5 {
 
 }
 
-header nav ul li {
-  list-style-type: none;
-  position: relative;
+/* ecran 6 */
 
-}
+.ecran6 {
 
-header nav ul li a {
-  text-decoration: none;
-  font-size: 21px;
-  margin: 0 15px;
-  color: rgb(255, 255, 255);
-}
-
-header nav {
-  width: 100%;
-  height: 25px;
-}
-
-
-.couleurh2devfront {
-  margin: 0;
-  font-size: 70px;
-  color: #8AA5CE;
-  text-shadow: 0 1px 0 #32312b, 0 2px 0 #32312b, 0 3px 0 #32312b,
-    0 4px 0 #32312b, 0 5px 0 #32312b, 0 6px 0 #32312b, 0 7px 0 #32312b,
-    0 8px 0 #32312b, 0 9px 0 #32312b, 0 30px 20px rgba(0, 0, 0, 0.8);
-}
-
-.titreNomPrenom {
-  margin: 0;
-  font-size: 50px;
-  color: #8AA5CE;
-  text-shadow: 0 1px 0 #32312b, 0 2px 0 #32312b, 0 3px 0 #32312b,
-    0 4px 0 #32312b, 0 5px 0 #32312b, 0 6px 0 #32312b, 0 7px 0 #32312b,
-    0 8px 0 #32312b, 0 9px 0 #32312b, 0 0px 0px rgba(0, 0, 0, 0.8);
 }
 
 /*Cadre Formations et Expériences*/
@@ -151,7 +181,7 @@ header nav {
 
 }
 
-/* Contenu Formations*/
+/* Début Contenu Formations*/
 .containEcran1 {
   height: 60%;
   width: 100%;
@@ -165,19 +195,24 @@ header nav {
   width: 80%;
 }
 
-/* Contenu Formations*/
+/* Fin Contenu Formations*/
 
-/* Contenu Experiences professionnel*/
-.containEcran2 {
-font-size: 20px;
+/* Début Contenu Experiences professionnel*/
+/* .containEcran2 {
+  background-color: #a02929;
+  font-size: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-margin: 0px 330px;
+  justify-content: center;
+  width: 10%;
   
-}
+} */
 
-/* Contenu Experiences professionnel*/
+ .containEcran2 .txt_exp p{
+
+ }
+
+
+/* Fin Contenu Experiences professionnel*/
 
 */ .tableau {
   width: 100%;
@@ -329,7 +364,7 @@ a:hover {
   opacity: 0.99;
 }
 
-/* fin code commun */
+
 
 /** hover 1 */
 .btn1 {
@@ -395,4 +430,17 @@ a:hover {
   width: 100%;
   height: 100%;
   padding: 50px 50px;
+}
+
+
+
+
+/**Formulaire contact**/
+
+
+
+.DL {
+  color: #8AA5CE;
+  padding: 2px 0;
+  
 }
